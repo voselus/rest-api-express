@@ -1,0 +1,3 @@
+- service: app
+  command: echo "Hello from Docker"
+
