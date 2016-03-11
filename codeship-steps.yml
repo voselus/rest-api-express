@@ -1,3 +1,9 @@
-- service: app
-  command: echo "Hello from Docker"
+- type: serial
+  steps:
+    - service: app
+      command: echo "Hello from Docker"
+    - service: app
+      command: npm install
+    - service: app
+      command: echo "goodbye from Docker"
 
